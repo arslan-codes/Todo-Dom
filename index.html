@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Daily To-Do Tasks</h1>
+      <p id="date"></p>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="menu-tray">
+          <div class="menu-item">
+            <input type="text" id="text" placeholder="Write your todo here" />
+            <input type="text" id="type" placeholder="Write your todo Type" />
+            <button id="btn">Add Todo</button>
+          </div>
+        </div>
+
+        <div id="todos">
+          <table id="taskTable">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Type</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Task rows will be dynamically inserted here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
