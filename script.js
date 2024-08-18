@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("text").value = "";
+  document.getElementById("type").value = "";
   const Addbutton = document.getElementById("btn");
   const taskTableBody = document.querySelector("#taskTable tbody");
   let todos = JSON.parse(localStorage.getItem("todos")) || [];

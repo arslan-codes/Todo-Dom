@@ -60,28 +60,26 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  margin-left: 16px;
 }
 
-.menu-item {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.menu-item input {
+.menu-tray input {
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid var(--dark-green);
+  /* border: 1px solid var(--dark-green); */
   background-color: #f8f8f8;
   color: #000;
-  flex: 1;
-  max-width: 400px;
 }
-
-.menu-item button {
+.menu-tray #text {
+  padding: 10px;
+  border-radius: 8px;
+  /* border: 1px solid var(--dark-green); */
+  width: 400px;
+  color: #000;
+}
+.menu-tray button {
   padding: 10px 20px;
   border-radius: 8px;
   border: none;
@@ -93,7 +91,7 @@ main {
   transition: background-color 0.3s ease;
 }
 
-.menu-item button:hover {
+.menu-tray button:hover {
   background-color: var(--btn-green);
   color: black;
 }
@@ -125,6 +123,7 @@ main {
 .task-title {
   text-align: left;
   width: 60%;
+  text-align-last: justify;
 }
 
 .task-type,
@@ -143,13 +142,14 @@ main {
   border-radius: 3px;
   cursor: pointer;
   padding: 5px 10px;
+  opacity: 0.8;
 }
 
 .delete-btn {
-  background-color: #dc3545;
+  background-color: #d30015;
 }
 
 .edit-btn:hover,
 .delete-btn:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
